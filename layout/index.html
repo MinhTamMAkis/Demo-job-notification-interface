@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home/calendar.css">
+    <link rel="stylesheet" href="css/home/home.css">
+    <link rel="stylesheet" href="css/style/button_nav.css">
+    <link rel="stylesheet" href="css/style/header.css">
+    <link rel="stylesheet" href="css/style/style.css">
+    <title>WEB FOR WORK</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/maki logo.png" alt="">
+                </div>
+                <div class="list-item">
+                    <div class="item">
+                        <button id="button_nav">
+                            <a href="#"><span>HOME</span></a>
+                        </button>
+                        <button id="button_nav">
+                            <a href="#"><span>WORK</span></a>
+                        </button>
+                        <button id="button_nav">
+                            <a href="#"><span>LIKE</span></a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- HOME -->
+        <section id="home"> 
+            <div class="home_page">
+                <div class="calendar">
+                    <div class="my-calendar clearfix">
+                        <div class="calendar-box">
+                            <table class="cal-table">
+                            <thead>
+                                <tr>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>T</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cal-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div  class="manager_work_day">
+                        <div class="button_manager">
+                            <div class="button-borders">
+                                <button class="primary-button"> BUTTON</button>
+                            </div>
+                        </div>
+                        <div class="button_manager">
+                            <div class="button-borders">
+                                <button class="primary-button"> BUTTON</button>
+                            </div>
+                        </div>
+                        <div class="button_manager">
+                            <div class="button-borders">
+                                <button class="primary-button"> BUTTON</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_work_page">
+                    <div class="ctr-box clearfix">
+                        <span class="cal-month"></span>
+                        <span class="cal-year"></span>
+                    </div>
+                    <div class="notification_work">
+                        <h1>
+                            WORK FOR DAY <span id="getday_forwork"></span>
+                        </h1>
+                        <div>
+                                <div class="item_work_notifi">
+                                    <span>TASK</span>
+                                </div>
+                                <div class="item_work_notifi">
+                                    <span>TASK</span>
+                                </div>
+                                <div class="item_work_notifi">
+                                    <span>TASK</span>
+                                </div>
+                                <div class="item_work_notifi">
+                                    <span>TASK</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HOME -->
+    </main>
+</body>
+<script src="js/calendar.js"></script>
+</html>

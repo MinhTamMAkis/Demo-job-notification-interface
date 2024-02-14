@@ -1,0 +1,142 @@
+.home_page {
+    display: flex;
+    
+
+}
+
+.info_work_page {
+    width: 100%;
+}
+.ctr-box  {
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+.notification_work {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 3px black;
+    height: 100%;
+}
+.item_work_notifi  {
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px 0 20px 0 ;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    
+}
+.item_work_notifi:nth-child(2n+1) {
+    background-color: #5EDDEC; /* Màu cho các phần tử lẻ */
+}
+
+.item_work_notifi:nth-child(2n) {
+    background-color: #8FF3FF; /* Màu cho các phần tử chẵn */
+}
+
+.manager_work_day {
+    display: flex;
+    justify-content: center;
+}
+.button_manager {
+    padding: 20px 40px 10px;
+}
+/* BUTTON */
+.primary-button {
+    font-family: 'Ropa Sans', sans-serif;
+       /* font-family: 'Valorant', sans-serif; */
+    color: #0E1822;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    border: 1px solid #0E1822;
+    padding: 0.8rem 2.1rem;
+    background-image: url("../../img/button.svg");
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+   }
+   
+   .primary-button:hover {
+    border: 1px solid #0E1822;
+    color: white;
+    background-position: 40%;
+   }
+   
+   .primary-button:before {
+    content: "";
+    position: absolute;
+    background-color: #0E1822;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+   }
+   
+   .primary-button:hover:before {
+    background-color: white;
+   }
+   
+   .primary-button:hover:after {
+    background-color: white;
+   }
+   
+   .primary-button:after {
+    content: "";
+    position: absolute;
+    background-color: #5EDDEC;
+    width: 0.3rem;
+    height: 0.3rem;
+    bottom: -1px;
+    right: -1px;
+    transition: background-color 0.15s ease-in-out;
+   }
+   
+   .button-borders {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+   }
+   
+   .button-borders:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    top: -0.3em;
+    border: 1px solid #0E1822;
+    border-bottom: 0px;
+       /* opacity: 0.3; */
+   }
+   
+   .button-borders:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    bottom: -0.3em;
+    border: 1px solid #0E1822;
+    border-top: 0px;
+       /* opacity: 0.3; */
+    z-index: 0;
+   }
+   
+   .shape {
+    fill: #0E1822;
+   }

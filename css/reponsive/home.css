@@ -1,0 +1,54 @@
+@media (max-width:1024px){
+    .my-calendar{
+        width: 500px;
+    }
+}
+@media (max-width:768px){
+    .home_page{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .my-calendar{
+        width: 600px;
+        
+        
+    }
+    .my-calendar .calendar-box {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+@media (max-width:568px){
+    .button1 { grid-area: button1; }
+    .button2 { grid-area: button2; }
+    .button3 { grid-area: button3; }
+    .my-calendar{
+        width: 300px;
+    }
+    .manager_work_day{
+        display: grid;
+        grid-template-areas:
+        'button1 button2'
+        'button3 button3';
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #menu-button{
+        display: block;
+    }
+    .nav-links {
+        display: none; 
+    }
+    .nav-links.menu_mobi {
+        
+        display: flex;
+        align-items: center;
+
+    }
+}

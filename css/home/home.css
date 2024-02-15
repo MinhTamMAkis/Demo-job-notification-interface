@@ -5,6 +5,7 @@
 }
 
 .info_work_page {
+    height: 100%;
     width: 100%;
 }
 .ctr-box  {
@@ -22,6 +23,8 @@
     align-items: center;
     text-align: center;
     border: solid 3px black;
+    border-radius: 15px;
+    padding-bottom: 20px;
     height: 100%;
 }
 .item_work_notifi  {
@@ -79,7 +82,7 @@
    .primary-button:before {
     content: "";
     position: absolute;
-    background-color: #0E1822;
+    background-color: #5EDDEC;
     width: 0.2rem;
     height: 0.2rem;
     top: -1px;
@@ -88,11 +91,11 @@
    }
    
    .primary-button:hover:before {
-    background-color: white;
+    background-color: #0E1822;
    }
    
    .primary-button:hover:after {
-    background-color: white;
+    background-color: #0E1822;
    }
    
    .primary-button:after {

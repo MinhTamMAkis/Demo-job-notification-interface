@@ -14,6 +14,7 @@
     font-weight: 800;
     border: 1px solid #ddd;
     cursor: default;
+    border-radius: 10px;
   }
   .my-calendar .clicked-date {
     border-radius: 25px;
@@ -52,7 +53,7 @@
     border: none;
     background: none;
   }
-  .ctr-box .btn-cal:after {
+  /* .ctr-box .btn-cal:after {
     content: '<';
     position: absolute;
     top: 0;
@@ -68,7 +69,7 @@
   }
   .ctr-box .btn-cal.next:after {
     content: '>';
-  }
+  } */
   
   .cal-table {
     width: 100%;
@@ -90,9 +91,27 @@
     cursor: pointer;
   }
   .cal-table td.today {
+    padding-left:25px;
+    position: relative;
     background: #5EDDEC;
     border-radius: 10px;
+    font-size: 1.5rem;
     color: #fff;
+  }
+  .cal-table td.today:after{
+    
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/gurasim.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
   }
   .cal-table td.day-active {
     background: #ff8585;

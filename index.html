@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="css/home/home.css">
     <link rel="stylesheet" href="css/style/button_nav.css">
     <link rel="stylesheet" href="css/style/header.css">
-    <link rel="stylesheet" href="css/style/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive/home.css">
     <title>WEB FOR WORK</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="img/maki logo.png" alt="">
-                </div>
-                <div class="list-item">
-                    <div class="item">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/maki logo.png" alt="">
+            </div>
+            <div class="list-item">
+                <div class="item">
+                    <button id="menu-button">Menu</button>
+                    <div class="nav-links">
                         <button id="button_nav">
                             <a href="#"><span>HOME</span></a>
                         </button>
@@ -30,8 +32,11 @@
                         </button>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+    <main>
+
         <!-- HOME -->
         <section id="home"> 
             <div class="home_page">
@@ -55,17 +60,17 @@
                         </div>
                     </div>
                     <div  class="manager_work_day">
-                        <div class="button_manager">
+                        <div class="button_manager  button1">
+                            <div class="button-borders">
+                                <button class="primary-button"> <a href="layout/add_work.html">ADD WORK</a></button>
+                            </div>
+                        </div>
+                        <div class="button_manager button2">
                             <div class="button-borders">
                                 <button class="primary-button"> BUTTON</button>
                             </div>
                         </div>
-                        <div class="button_manager">
-                            <div class="button-borders">
-                                <button class="primary-button"> BUTTON</button>
-                            </div>
-                        </div>
-                        <div class="button_manager">
+                        <div class="button_manager button3">
                             <div class="button-borders">
                                 <button class="primary-button"> BUTTON</button>
                             </div>
@@ -100,7 +105,12 @@
             </div>
         </section>
         <!-- END HOME -->
+        
     </main>
+    <footer>
+        <div class="copyright">Copyright © 2024 MAKI</div>
+    </footer>
 </body>
 <script src="js/calendar.js"></script>
+<script src="js/reponsive.js"></script>
 </html>

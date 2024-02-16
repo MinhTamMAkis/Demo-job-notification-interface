@@ -10,12 +10,29 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reponsive/home.css">
     <title>WEB FOR WORK</title>
+    <style>
+        /* Hide the default dropdown arrow */
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          /* Add some styles to make it visually appealing */
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: #fff;
+          font-size: 16px;
+          outline: none; /* Remove default focus style */
+          
+        }
+        
+        </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="img/maki logo.png" alt="">
+                <img src="../img/maki logo.png" alt="">
             </div>
             <div class="list-item">
                 <div class="item">
@@ -39,7 +56,40 @@
 
         <!-- HOME -->
         <section id="work"> 
-            
+            <div class="form_work">
+                <form action=""  name="form_day_work">
+                    <div id="choice_day">
+                        <select id="daydropdown">
+                            <option value="0">Day</option>
+                        </select>
+                        <select id="monthdropdown">
+                            <option value="0">Month</option>
+                        </select>
+                        <select id="yeardropdown">
+                            <option value="0">Year</option>
+                        </select>
+                    </div>
+                    <div id="dayforwork">
+                        <select id='alarmhrs' ></select>
+                        <select id='alarmmins' ></select>
+                        <select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+                    </div>
+                    <div class="add_info_work">
+                        <div class="title_work">
+                            <h1>ADD WORK</h1>
+                        </div>
+                        <div class="form_write">
+                            <select name="hourse" id="hourse">
+                                <option value="1">8:00</option>
+                                <option value="2"></option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
         <!-- END HOME -->
         
@@ -48,6 +98,8 @@
         <div class="copyright">Copyright © 2024 MAKI</div>
     </footer>
 </body>
-<script src="../js/calendar.js"></script>
+
 <script src="../js/reponsive.js"></script>
+<script src="../js/choseday.js" type="text/javascript"></script>
+
 </html>

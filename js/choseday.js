@@ -23,3 +23,25 @@ for (var i = currentYear; i >= currentYear; i--) {
     option.textContent = i;
     yearDropdown.appendChild(option);
 }
+// choice time
+function hoursMenu() {
+
+    var select = document.getElementById('alarmhrs');
+    var hrs = 12
+
+    for (i = 1; i <= hrs; i++) {
+        select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i);
+
+    }
+}
+hoursMenu();
+function minMenu() {
+
+    var select = document.getElementById('alarmmins');
+    var min = 59;
+
+    for (i = 0; i <= min; i++) {
+        select.options[select.options.length] = new Option(i < 10 ? "0" + i : i, i);
+    }
+}
+minMenu();

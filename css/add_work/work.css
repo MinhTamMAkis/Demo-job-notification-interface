@@ -1,0 +1,11 @@
+#work {
+    position: relative;
+    padding: 10px;
+    border: solid 2px black
+}
+#choice_day{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}

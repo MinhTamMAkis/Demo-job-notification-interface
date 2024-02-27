@@ -10,6 +10,7 @@
     width: 700px;
     margin: 30px;
     padding: 20px 20px 10px;
+    padding: 20px 40px 10px 10px;
     text-align: center;
     font-weight: 800;
     border: 1px solid #ddd;
@@ -27,7 +28,7 @@
   .my-calendar .calendar-box {
     
     width: 100%;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   
   .clicked-date .cal-day {
